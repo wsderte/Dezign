@@ -1,0 +1,32 @@
+.clients-wrap {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-text-box {
+    padding: 80px 120px;
+    width: 1216px;
+    height: 300px;
+
+    .clients-text {
+        height: 200px;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 150%;
+
+        color: rgba(227, 228, 230, 0.55);
+    }
+    .clients-image-box {
+        justify-content: space-between;
+        padding: 16px 0px;
+    }
+}
+
+.white {
+    color: white;
+}
