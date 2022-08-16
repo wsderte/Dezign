@@ -1,8 +1,10 @@
 import React from 'react'
+// import { IconType } from 'react-icons'
 import './icons.scss'
 
 interface ImageI {
-    image: any
+    image: JSX.Element
+    // image: IconType  // problems with major version
 }
 
 export const Icons = ({ image }: ImageI) => {

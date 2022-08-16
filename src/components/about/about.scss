@@ -1,0 +1,87 @@
+.about-wrap {
+    align-items: center;
+    padding: 74px 107px;
+    gap: 8px;
+
+    width: 1440px;
+    height: fit-content;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 34px;
+
+    width: 80vw;
+    height: 848px;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 596px;
+    height: 292px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: rgba(227, 228, 230, 0.55);
+
+    .about-header {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+
+        letter-spacing: 0.06em;
+        color: #e3e4e6;
+    }
+}
+
+.about-images-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: fit-content;
+    height: 848px;
+    .about-img {
+        width: 282px;
+        border-radius: 16px;
+    }
+    .img-music {
+        height: 408px;
+        background: url(music.png);
+    }
+    .img-game {
+        height: 374px;
+        background: url(game.png);
+    }
+    .img-mountain {
+        height: 374px;
+        background: url(mountain.png);
+    }
+    .about-horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 32px;
+
+        width: 282px;
+        height: 848px;
+    }
+}

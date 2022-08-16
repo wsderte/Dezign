@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.scss'
+import { AiOutlineDown } from 'react-icons/ai'
 
 export const Header = () => {
     return (
@@ -22,6 +23,9 @@ export const Header = () => {
                     {'and'}
                     <span className="white">{' Interaction Design'}</span>
                 </div>
+            </div>
+            <div className="header-icon">
+                <AiOutlineDown size={40} color={'white'} />
             </div>
         </div>
     )

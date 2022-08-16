@@ -1,0 +1,57 @@
+.button-wrap {
+    width: 163px;
+    height: 40px;
+    padding: 8px 16px;
+    gap: 8px;
+
+    border: 1px solid rgba(227, 228, 230, 0.55);
+    border-radius: 100px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+
+    .button-text {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #e3e4e6;
+    }
+}
+
+.button-wrap:hover {
+    padding: 8px 28px;
+    gap: 8px;
+
+    width: 189px;
+    height: 40px;
+
+    background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+
+    border: 1px solid #e3e4e6;
+    border-radius: 100px;
+    .button-text {
+        width: 110px;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #e3e4e6;
+    }
+}

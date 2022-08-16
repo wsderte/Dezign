@@ -1,0 +1,59 @@
+.template-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 156px;
+
+    // width: 1220px;
+    height: 490px;
+    // flex-direction: row-reverse;
+}
+.template-image {
+    width: 594px;
+    height: 490px;
+
+    background: #c4c4c4;
+    border-radius: 24px;
+}
+.template-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 594px;
+    height: 490px;
+
+    color: #e3e4e6;
+    font-family: 'Work Sans';
+    font-style: normal;
+    letter-spacing: 0.04em;
+
+    .template-header {
+        height: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+    .template-description {
+        height: 144px;
+
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 150%;
+
+        color: rgba(227, 228, 230, 0.55);
+    }
+    .template-category {
+        height: 27px;
+
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        color: rgba(227, 228, 230, 0.55);
+    }
+}

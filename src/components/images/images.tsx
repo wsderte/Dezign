@@ -1,11 +1,11 @@
 import React from 'react'
 import './images.scss'
 
-interface ImageI {
+interface UrlI {
     url: string
 }
 
-export const Image = ({ url }: ImageI) => {
+export const Image = ({ url }: UrlI) => {
     return (
         <div className="clients-image">
             <img src={require(`${url}`)} alt={' '} />
