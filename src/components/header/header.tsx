@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.scss'
 import { AiOutlineDown } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 
 export const Header = () => {
     return (
@@ -11,8 +12,14 @@ export const Header = () => {
                 </div>
                 <div className="header-nav">
                     <div className="header-but">HOME</div>
-                    <div className="header-but">WORK</div>
-                    <div className="header-but">ABOUT</div>
+                    <Link to="work" spy={true} smooth={true}>
+                        {' '}
+                        <div className="header-but">WORK</div>
+                    </Link>
+                    <Link to="about" spy={true} smooth={true}>
+                        {' '}
+                        <div className="header-but">ABOUT</div>
+                    </Link>
                 </div>
             </div>
             <div className="header-text-box">

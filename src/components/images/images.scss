@@ -1,9 +1,26 @@
 .clients-image-box {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .clients-image {
     width: 194.46px;
     height: 60.5px;
+}
+
+@media (max-width: 1020px) {
+    .clients-image-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 620px) {
+    .clients-image-box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 }

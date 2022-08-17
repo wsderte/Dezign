@@ -9,7 +9,7 @@
 .clients-text-box {
     padding: 80px 120px;
     width: 80%;
-    height: 300px;
+    height: fit-content;
 
     .clients-text {
         height: 200px;
@@ -29,4 +29,70 @@
 
 .white {
     color: white;
+}
+
+@media (max-width: 1020px) {
+    .clients-text-box {
+        .clients-image-box {
+            gap: 52px;
+        }
+    }
+}
+
+@media (max-width: 738px) {
+    .clients-text-box {
+        padding: 80px 50px;
+        width: 90%;
+        height: fit-content;
+
+        .clients-text {
+            height: fit-content;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 150%;
+
+            color: rgba(227, 228, 230, 0.55);
+        }
+        .clients-image-box {
+            // padding: 30px calc((100% - 194.46px) / 2);
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .clients-text-box {
+        .clients-image-box {
+            padding: 30px calc((80% - 194.46px) / 2);
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .clients-text-box {
+        padding: 80px 20px;
+        width: 90%;
+        height: fit-content;
+
+        .clients-text {
+            height: fit-content;
+            font-weight: 300;
+            font-size: 43px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media (max-width: 496px) {
+    .clients-text-box {
+        padding: 80px 15px;
+        width: 98%;
+        height: fit-content;
+
+        .clients-text {
+            height: fit-content;
+            font-weight: 300;
+            font-size: 35px;
+            line-height: 150%;
+        }
+    }
 }

@@ -39,7 +39,7 @@ export const Work = () => {
     ]
 
     return (
-        <div className="work-wrap">
+        <div id="work" className="work-wrap">
             <div className="work-header">
                 Selected <span className="white">Works</span>
             </div>

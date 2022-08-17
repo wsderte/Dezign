@@ -81,21 +81,20 @@
     flex-direction: row;
     align-items: flex-start;
 
-    padding: 0px 104px;
+    // padding: 0px 104px;
     gap: 10px;
     isolation: isolate;
 
     position: absolute;
     height: 168px;
-    left: 112px;
-    right: 112px;
+    // left: 20%;
+    // right: 20%;
     top: 316px;
 
     .header-text {
-        position: absolute;
-        width: 1008px;
+        width: fit-content;
         height: 168px;
-        left: 20%;
+        padding-left: 25%;
         top: 0px;
 
         font-family: 'Work Sans';
@@ -120,4 +119,73 @@
     height: 40px;
     left: calc(50% - 40px / 2);
     bottom: 42px;
+}
+
+@media (max-width: 1750px) {
+    .header-text-box {
+        .header-text {
+            padding-left: 15%;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .header-text-box {
+        .header-text {
+            padding-left: 10%;
+            font-weight: 300;
+            font-size: 56px;
+            line-height: 150%;
+            letter-spacing: 0em;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-text-box {
+        .header-text {
+            padding-left: 10%;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media (max-width: 672px) {
+    .header-text-box {
+        .header-text {
+            padding-left: 2%;
+            font-weight: 200;
+            font-size: 30px;
+            line-height: 150%;
+            letter-spacing: 0em;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .header-logo-box {
+        left: 50px;
+    }
+    .header-but {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 200%;
+    }
+    .header-nav {
+        gap: 20px;
+
+        right: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-nav {
+        right: 0px;
+    }
 }

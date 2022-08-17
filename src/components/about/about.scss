@@ -16,7 +16,7 @@
     gap: 34px;
 
     width: 80vw;
-    height: 848px;
+    height: fit-content;
 }
 
 .about-title {
@@ -56,22 +56,22 @@
     gap: 32px;
 
     width: fit-content;
-    height: 848px;
+    height: fit-content;
     .about-img {
         width: 282px;
         border-radius: 16px;
     }
     .img-music {
         height: 408px;
-        background: url(music.png);
+        background: url(./images/music.png);
     }
     .img-game {
         height: 374px;
-        background: url(game.png);
+        background: url(./images/game.png);
     }
     .img-mountain {
         height: 374px;
-        background: url(mountain.png);
+        background: url(./images/mountain.png);
     }
     .about-horizontal {
         display: flex;
@@ -83,5 +83,32 @@
 
         width: 282px;
         height: 848px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-wrap {
+        padding: 74px 67px;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 626px) {
+    .about-images-box {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .about-title {
+        gap: 16px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 20px;
     }
 }
