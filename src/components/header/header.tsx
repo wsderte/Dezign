@@ -3,13 +3,14 @@ import './header.scss'
 import { AiOutlineDown } from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
-export const Header = () => {
+const Header: React.FC = () => {
     return (
         <div className="header-wrap">
             <div className="header-box">
                 <div className="header-logo-box">
                     <div className="header-logo"></div>
                 </div>
+
                 <div className="header-nav">
                     <div className="header-but">HOME</div>
                     <Link to="work" spy={true} smooth={true}>
@@ -22,13 +23,16 @@ export const Header = () => {
                     </Link>
                 </div>
             </div>
+
             <div className="header-text-box">
                 <div className="header-text">
                     {' '}
                     {'I’m a designer specialising in'}
                     <span className="white">{' UI/UX '}</span>
                     {'and'}
-                    <span className="white">{' Interaction Design'}</span>
+                    <div>
+                        <span className="white">{' Interaction Design'}</span>
+                    </div>
                 </div>
             </div>
             <div className="header-icon">
@@ -37,3 +41,5 @@ export const Header = () => {
         </div>
     )
 }
+
+export default React.memo(Header)

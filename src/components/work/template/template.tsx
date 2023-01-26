@@ -1,6 +1,6 @@
 import React from 'react'
 import CSS from 'csstype'
-import { Button } from '../button/button'
+import Button from '../button/button'
 import './template.scss'
 
 interface template {
@@ -10,7 +10,12 @@ interface template {
     reverse: boolean
 }
 
-export const Template = ({ image, header, category, reverse }: template) => {
+const Template: React.FC<template> = ({
+    image,
+    header,
+    category,
+    reverse,
+}: template) => {
     let styleReverse: CSS.Properties = {}
     if (reverse) {
         styleReverse = { flexDirection: 'row-reverse' }
@@ -40,3 +45,5 @@ export const Template = ({ image, header, category, reverse }: template) => {
         </div>
     )
 }
+
+export default React.memo(Template)

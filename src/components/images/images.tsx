@@ -5,7 +5,7 @@ interface UrlI {
     url: string
 }
 
-export const Image = ({ url }: UrlI) => {
+const Image: React.FC<UrlI> = ({ url }: UrlI) => {
     return (
         <div className="clients-image">
             <img src={require(`${url}`)} alt={' '} />
@@ -13,3 +13,5 @@ export const Image = ({ url }: UrlI) => {
         </div>
     )
 }
+
+export default React.memo(Image)

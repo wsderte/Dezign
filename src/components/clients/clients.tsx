@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image } from '../images/images'
+import Image from '../images/images'
 import './clients.scss'
 
 const images = [
@@ -9,7 +9,7 @@ const images = [
     './images/Microsoft.png',
 ]
 
-export const Clients = () => {
+const Clients: React.FC = () => {
     return (
         <div className="clients-wrap">
             <div className="clients-text-box">
@@ -27,3 +27,5 @@ export const Clients = () => {
         </div>
     )
 }
+
+export default React.memo(Clients)

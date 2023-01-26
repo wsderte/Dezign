@@ -1,12 +1,12 @@
 import React from 'react'
-import { Template } from './template/template'
+import Template from './template/template'
 import './work.scss'
 const estate = require('./images/estate.png')
 const plant = require('./images/plant.png')
 const smartHome = require('./images/smartHome.png')
 const Dezign = require('./images/Dezign.png')
 
-export const Work = () => {
+const Work: React.FC = () => {
     const templates = [
         {
             image: estate,
@@ -57,3 +57,5 @@ export const Work = () => {
         </div>
     )
 }
+
+export default React.memo(Work)

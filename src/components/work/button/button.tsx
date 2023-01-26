@@ -3,7 +3,7 @@ import './button.scss'
 
 import { AiOutlineRight } from 'react-icons/ai'
 
-export const Button = () => {
+const Button: React.FC = () => {
     return (
         <div className="button-wrap">
             <div className="button-text">View Work</div>
@@ -11,3 +11,5 @@ export const Button = () => {
         </div>
     )
 }
+
+export default React.memo(Button)

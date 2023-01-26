@@ -4,7 +4,7 @@ import './footer.scss'
 import { FiMail, FiDribbble } from 'react-icons/fi'
 import { FaBehance, FaLinkedinIn } from 'react-icons/fa'
 
-import { Icons } from './icons/icons'
+import Icons from './icons/icons'
 
 const icons = [
     {
@@ -25,7 +25,7 @@ const icons = [
     },
 ]
 
-export const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <div className="footer-wrap">
             <div className="footer-container">
@@ -47,3 +47,5 @@ export const Footer = () => {
         </div>
     )
 }
+
+export default React.memo(Footer)

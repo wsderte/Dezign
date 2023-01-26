@@ -7,10 +7,12 @@ interface ImageI {
     // image: IconType  // problems with major version
 }
 
-export const Icons = ({ image }: ImageI) => {
+const Icons: React.FC<ImageI> = ({ image }: ImageI) => {
     return (
         <div className="social-image-wrap">
             <div className="social-image">{image}</div>
         </div>
     )
 }
+
+export default React.memo(Icons)

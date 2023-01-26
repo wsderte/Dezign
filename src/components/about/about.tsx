@@ -1,14 +1,16 @@
 import React from 'react'
 import './about.scss'
 
-export const About = () => {
+const About: React.FC = () => {
     return (
         <div id="about" className="about-wrap">
             <div className="about-container">
                 <div className="about-title">
                     <div className="about-header">A BIT ABOUT ME</div>
                     <div className="about-text">
-                        I am a UI/UX designer who is passionate about creating
+                        {
+                            'I am a UI/UX designer who is passionate about creating '
+                        }
                         <span className="white">
                             beautiful and joyful digital experiences. Besides
                             design, I love music, games and travelling.
@@ -26,3 +28,5 @@ export const About = () => {
         </div>
     )
 }
+
+export default React.memo(About)
